@@ -16,7 +16,9 @@ El **quien es quien** se puede considerar un problema de optimización, ya que u
 
 En este caso el juego consiste en encontrar el personaje que seleccionó la otra persona lo antes posible, con lo cual tendriamos que buscar las mejores preguntas para reducir las opciones y encontrar el personaje lo antes posible.
 
-Siendo el mejor estado el conocimiento de la mayor cantidad de información para adivnar la persona usando las menos preguntas posibles, y la función objetivo es usar las mínimas preguntas para encontrarlo.
+Siendo el mejor estado el conocimiento de la mayor cantidad de información para adivinar el personaje usando las menos preguntas posibles, y la función objetivo es usar las mínimas preguntas para encontrarlo.
+
+Por eso el **quien es quien** es un problema de optimización y no de búsqueda, ya que en este caso buscamos obtener el personaje con las mínimas preguntas sin la necesidad de hacer una búsqueda completa.
 
 ## 2. Entorno del agente
 
