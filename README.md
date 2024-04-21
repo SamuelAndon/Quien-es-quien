@@ -40,6 +40,15 @@ Entorno de tareas | Completamente / parcialmente Observable| Agentes | Determini
 
 ## 3. Algoritmo.
 
+## 4. Estrutura del agente
+
+## 5. Programación lógica
+
+Podemos decir que el paradigma de programación lógica es adecuado para el problema **quien es quien** debido a sus diferentes características. Una de las principales del paradigma es que se centra principalmente en el 'que' del problema, si lo asociamos al **quien es quien**, el 'que' del problema es buscar a través de preguntas al personaje objetivo.
+
+Además, esta compuesto por un conjunto de hechos y reglas, igual quen el **quien es quien** en el cual contamos con un conjunto de caracteristicas de cada personaje del juego y hechos hacia cada persona. Usando estas diferentes caracteristicas, podemos afirmar las características del personaje objetivo o descartar opciones, desta forma cada vez que vayamos formulando preguntas nos vamos acercaremos a las características del personaje objetivo.
+
+## 6. Base de datos Prolog
 
 ## Bibliografía
 
