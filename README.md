@@ -42,6 +42,12 @@ Entorno de tareas | Completamente / parcialmente Observable| Agentes | Determini
 
 ## 4. Estrutura del agente
 
+El **quien es quien** se adapta perfectamente a las necesidades del agente basado en objetivos. Ya que estes además de obtener la información actual buscan llegar a un objetivo, visualizando las diferentes opciones que tiene y escojiendo la que más le acerque al objetivo deseado.
+
+Basandonos en el **quien es quien**, hay como objetivo descubrir el personaje oculto formulando el mínimo de preguntas posibles, con lo cual partiendo de la información actual, debemos buscar las preguntas que podemos formular viendo las caracteristicas disponibles y elegir la pregunta que nos descarte más personajes para acercarnos lo máximo posible al personaje objetivo o llegar a él.
+
+![Modelo agente inteligente](./doc/programa_agente_quien_es_quien.png)
+
 ## 5. Programación lógica
 
 Podemos decir que el paradigma de programación lógica es adecuado para el problema **quien es quien** debido a sus diferentes características. Una de las principales del paradigma es que se centra principalmente en el 'que' del problema, si lo asociamos al **quien es quien**, el 'que' del problema es buscar a través de preguntas al personaje objetivo.
@@ -50,7 +56,10 @@ Además, esta compuesto por un conjunto de hechos y reglas, igual quen el **quie
 
 ## 6. Base de datos Prolog
 
+
+
 ## Bibliografía
 
 - Russell, Peter. _ARTIFICIAL INTELLIGENCE : A Modern Approach_, Global Edition. S.L., Pearson Education Limited, 2021.
 - @dfleta. "quienesquien". _github_. https://github.com/dfleta/quienesquien
+- Beginning Java 8 Fundamentals
