@@ -19,18 +19,27 @@ def mostrar_tablero():
         caracteristicas = p["Caracteristicas"]
         print(f"Nombre: {nombre}, Caracteristicas: {caracteristicas}")
 
-# Obtenemos la caracteristica que más se repite
-def caracteristica_mas_habitual():
+# Obtenemos una lista con el número de veces que se repite cada caracteristica y seleccionamos la del medio.
+def caracteristica_a_preguntar():
+    lista_caracteristicas = []
     caracteristicas = list(prolog.query("personaje(_,Caracteristicas)"))
-    lista_caracteristicas = [caracteristica for c in caracteristicas for caracteristica in c['Caracteristicas']]
+    for c in caracteristicas:
+        for ca in c['Caracteristicas']:
+            lista_caracteristicas.append(ca)
     frecuencia_cada_caracteristica = Counter(lista_caracteristicas)
-    mas_habitual = frecuencia_cada_caracteristica.most_common(1)
-    return mas_habitual
+    frecuencia_cada_caracteristica = sorted(frecuencia_cada_caracteristica.items(), key=lambda i: i[1], reverse=True)
+    print(frecuencia_cada_caracteristica)
+    caracteristica_a_preguntar = frecuencia_cada_caracteristica[int(len(frecuencia_cada_caracteristica)/2)][0]
+    return caracteristica_a_preguntar
 
 def main():
-    print(personaje_objetivo())
+    objetivo = personaje_objetivo()
+    objetivo_sin_adivinado = True
+    print(objetivo)
     mostrar_tablero()
-    print(caracteristica_mas_habitual())
     
+    while objetivo_sin_adivinado:
+        caract_a_preguntar = caracteristica_a_preguntar()
+        print(f"El personaje tiene {caract_a_preguntar} ?")
 
 main()
