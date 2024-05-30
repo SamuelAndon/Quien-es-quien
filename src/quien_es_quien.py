@@ -3,7 +3,7 @@ import random
 from collections import Counter
 
 prolog = Prolog()
-prolog.consult('quien_es_quien.pl')
+prolog.consult("quien_es_quien.pl")
 
 # Obtenemos la lista de personajes y con el random seleccionamos uno aleatorio siendo el personaje objetivo
 def personaje_objetivo():
@@ -23,7 +23,7 @@ def caracteristica_a_preguntar(personajes):
     lista_caracteristicas = []
     
     for personaje in personajes:
-        for caracteristica in personaje['Caracteristicas']:
+        for caracteristica in personaje["Caracteristicas"]:
             lista_caracteristicas.append(caracteristica)
 
     frecuencia_cada_caracteristica = Counter(lista_caracteristicas)
@@ -65,6 +65,6 @@ def main():
 
         personajes = lista_temp
         if len(personajes) == 1:
-            print(f"El personaje es {personajes}")
+            print(f"El personaje es {personajes[0]['Nombre']}")
     print(f"El personaje fue adivinado en {contador_preguntas} preguntas")
 main()
