@@ -40,6 +40,8 @@ Entorno de tareas | Completamente / parcialmente Observable| Agentes | Determini
 
 ## 3. Algoritmo.
 
+ñ por nh
+
 ## 4. Estrutura del agente
 
 El **quien es quien** se adapta perfectamente a las necesidades del agente basado en objetivos. Ya que estes además de obtener la información actual buscan llegar a un objetivo, visualizando las diferentes opciones que tiene y escojiendo la que más le acerque al objetivo deseado.
