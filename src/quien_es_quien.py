@@ -3,7 +3,7 @@ import random
 from collections import Counter
 
 prolog = Prolog()
-prolog.consult("quien_es_quien.pl")
+prolog.consult("src/quien_es_quien.pl")
 
 # Obtenemos la lista de personajes y con el random seleccionamos uno aleatorio siendo el personaje objetivo
 def personaje_objetivo():
