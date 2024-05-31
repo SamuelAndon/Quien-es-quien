@@ -8,9 +8,9 @@ prolog.consult('src/quien_es_quien.pl')
 @pytest.mark.eleccion
 def test_personaje_objetivo():
     personajes = list(prolog.query("personaje(Nombre, Caracteristicas)"))
-    personaje_objetivo = personaje_objetivo()
+    p_objetivo = personaje_objetivo()
 
-    if personaje_objetivo in personajes:
+    if p_objetivo in personajes:
         assert True
 
 @pytest.mark.mostrar
