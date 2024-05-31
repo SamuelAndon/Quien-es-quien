@@ -46,7 +46,7 @@ def main():
     
     while len(personajes) > 1:
         contador_preguntas += 1
-        print("Personajes actuales")
+        print("Personajes actuales:")
         mostrar_tablero(personajes)
         caract_a_preguntar = caracteristica_a_preguntar(personajes)
         print(f"El personaje tiene {caract_a_preguntar}?")
