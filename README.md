@@ -31,19 +31,19 @@ Entorno de tareas | Completamente / parcialmente Observable| Agentes | Determini
 
 - **Multiagente:** Mientras está en proceso la partida es necesario la interacción de otro agente, a la hora de realizar preguntas y responderlas para continuar en la búsqueda del personaje que tenemos que adivinar.
 
-- **Determinista:** Puede parecer estocástico ya que al inicio del juego el personaje se coje de forma aleatoria, pero es determinista, ya que en el proceso del juego las preguntas que se realizan tienen respuestas fijas "si" o "no", no existe aleatoriedad en ellas.
+- **Determinista:** Puede parecer estocástico ya que al inicio del juego el personaje se coje de forma aleatoria, pero es determinista, ya que en el proceso del juego las preguntas que se realizan tienen respuestas fijas "sí" o "no", no existe aleatoriedad en ellas.
 
-- **Secuencial:** Es secuencial debido a que la respuesta de cada pregunta afecta a las siguientes, ya que depende de si es sí o no quedarian unos u otros personajes, los cuales tendrian diferentes características. Lo que afecta directamente a la siguiente pregunta.
+- **Secuencial:** Es secuencial debido a que la respuesta de cada pregunta afecta a las siguientes, ya que depende de si es sí o no quedarían unos u otros personajes, los cuales tendrían diferentes características. Lo que afecta directamente a la siguiente pregunta.
 
 - **Estático:** Se trata de un entorno estático ya que mientras se están realizando las preguntas, el entorno no se modifica, como tampoco lo hace el tablero ni el personaje objetivo.
 
-- **Discreto:** Se trata de un agente discreto ya que tiene un número finito de estados. A la hora de seleccionar el personaje, se escoje de una baraja que contiene un número limitado de personajes, además, a la hora de realizar las preguntas también hay un numero limitado, ya que depende de las caracteristicas de los personajes anteriores. Y por último, las respuestas también son limitadas ya que solo pueden ser "si" o "no".
+- **Discreto:** Se trata de un agente discreto ya que tiene un número finito de estados. A la hora de seleccionar el personaje, se escoje de una baraja que contiene un número limitado de personajes, además, a la hora de realizar las preguntas también hay un numero limitado, ya que depende de las características de los personajes anteriores. Y por último, las respuestas también son limitadas ya que solo pueden ser "sí" o "no".
 
 ## 3. Algoritmo.
 
-A la hora de realizar el algoritmo, me centre en analizar las caracteristicas totales de la base de datos, contando cuantas veces aparece cada caracteristica entre los personajes que siguen en el tablero. Tras eso decidí seleccionar la caracteristica que se encontraba en el medio para realizar la siguiente pregunta. 
+A la hora de realizar el algoritmo, me centré en analizar las características totales de la base de datos, contando cuantas veces aparece cada característica entre los personajes que siguen en el tablero. Tras eso decidí seleccionar la característica que se encontraba en el medio para realizar la siguiente pregunta. 
 
-Ya que lo veo más efectivo que si cojemos la que más o menos se repite, ya que si cogieramos estas y tenemos suerte que no la tiene descartariamos muchos personajes pero es bastante más probable que la tenga, con lo cual descartariamos escasos personajes. Así de la forma que hice sabemos que descartaremos la mitad normalmente, ya que sería una caracteristica que la tendrían más o menos la mitad de los personajes.
+Ya que lo veo más efectivo que si cojemos la que más o menos se repite, ya que si cogieramos estas y tenemos suerte que no la tiene descartariamos muchos personajes pero es bastante más probable que la tenga, con lo cual descartariamos escasos personajes. Así de la forma que hice sabemos que descartaremos la mitad normalmente, ya que sería una característica que la tendrían más o menos la mitad de los personajes.
 
 ## 4. Estrutura del agente
 
@@ -55,7 +55,7 @@ Basandonos en el **quien es quien**, hay como objetivo descubrir el personaje oc
 
 ## 5. Programación lógica
 
-Podemos decir que el paradigma de programación lógica es adecuado para el problema **quien es quien** debido a sus diferentes características. Una de las principales del paradigma es que se centra principalmente en el 'que' del problema, si lo asociamos al **quien es quien**, el 'que' del problema es buscar a través de preguntas al personaje objetivo.
+Podemos decir que el paradigma de programación lógica es adecuado para el problema **quien es quien** debido a sus diferentes características. Una de las principales del paradigma es que se centra principalmente en el 'qué' del problema, si lo asociamos al **quien es quien**, el 'qué' del problema es buscar a través de preguntas al personaje objetivo.
 
 Además, esta compuesto por un conjunto de hechos y reglas, igual quen el **quien es quien** en el cual contamos con un conjunto de caracteristicas de cada personaje del juego y hechos hacia cada persona. Usando estas diferentes caracteristicas, podemos afirmar las características del personaje objetivo o descartar opciones, desta forma cada vez que vayamos formulando preguntas nos vamos acercaremos a las características del personaje objetivo.
 
@@ -63,7 +63,7 @@ Además, esta compuesto por un conjunto de hechos y reglas, igual quen el **quie
 
 A la hora de usar la base de datos prolog, en mi caso (quien_es_quien.pl) tuve que cambiarle las ñ por nh ya que a la hora de usarla me daba problemas con el unicode.
 
-La base de datos está compuesta por 24 reglas llamadas personajes, de los cuales hay el nombre y una lista donde estan las caracteristicas que tiene cada uno de ellos.
+La base de datos está compuesta por 24 reglas llamadas personajes, de los cuales hay el nombre y una lista donde están las caracteristicas que tiene cada uno de ellos.
 
 ## 7. Instalación
 
