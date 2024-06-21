@@ -78,15 +78,15 @@ cd quien_es_quien
 git clone https://github.com/SamuelAndon/Quien-es-quien.git
 ```
 
-3. Creamos un entorno virtual con python 3.9 y lo activamos
+3. Creamos un entorno virtual con python 3.12.3 y lo activamos
 ```
-conda create -n quien_es_quien
+conda create -n quien_es_quien python=3.12.3
 conda activate quien_es_quien
 ```
 
 4. Por último instalamos el requirements.txt 
 ```
-conda install --file requirements.txt
+pip install -r requirements.txt
 pip install git+https://github.com/yuce/pyswip@59016e0841f56177d1b18ec08fd9b67792bd0a97
 ```  
 
